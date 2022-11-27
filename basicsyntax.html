@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Introduction To C++</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+.w3-cpp{
+  width: 100px;
+}
+.container100{
+  background-color: rgb(39, 68, 112);;
+  background-repeat: repeat-x;
+  background-size: inherit;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  height: 100%;
+  max-height: 1200px;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+}
+.cpp-syntax100{
+  text-align: left;;
+  text-shadow: black;
+  margin-left: 50px;
+}
+.cpp-program100{
+  text-align: center;;
+  text-rendering: geometricPrecision;
+  margin-left: 0px;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+  
+<div class="container100"
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-blue w3-large w3-theme-20" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="./home.html" class="fa fa-home w3-bar-item w3-button w3-black-20"></a>
+    <a href="https://en.wikipedia.org/wiki/C%2B%2B" class="w3-bar-item w3-button w3-hide-small w3-hover-skyblue">About C++</a>
+    <a href="https://visualstudio.microsoft.com/" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Visual Studio</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"></h4><a class="w3-bar-item w3-button w3-hover-black" href=".//cpphome.html"><b>Introduction</b></a></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="basicsyntax.html"><b>Syntax</b></a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#"></a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-white">Syntax in C++</h1>
+      <h4 class="w3-text-white">Basic Syntax of Hello World Program</h4>
+      </div>
+      </div>
+      <div class="cpp-syntax100">
+      <p class="w3-text-white text-align-left">
+        <strong>Input-Output:Stream</strong> "#include iostream" - is an header file library that let us work with input and output objects, such as"cout". Header files add functionality to C++ Programs<br>
+        <strong>Standard Library</strong> "using namespace std" - means that we can use names for objects and variables from the standard library.<br>
+        <strong>Integer Main</strong> "int main()" - this is called a function any code inside its curly brackets {} will be executed<br>
+        <strong>Console/Character Output</strong> "cout" - is an object used together with the insertion operator to output. Example: cout<<"Hello World";<br>
+        <strong>Console/Character Input</strong> "cin" - it refers to "character" and "in" means "input". Thus, cin means "character input". The C++ cin object belongs to the istream class. cin is a predefined variable that reads data from the keyboard with the extraction operator >>. Example: cin>>var_name;<br>
+        <strong>Return Console</strong> "return 0" - it means the value 0 (usually some typer of int) is returned from a function to the caller of the function.</p>
+        </div>
+        </div>
+        <div class="cpp-program100">
+        <a class="w3-bar-item w3-button w3-hover-black w3-text-blue" href="https://www.programiz.com/cpp-programming/online-compiler"><button type="button"><b>Check the Program Here!</b></button></a>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal"></h1>
+      <p></p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-blue" href="./cpphome.html">1</a>
+      <a class="w3-button w3-blue" href="./basicsyntax.html">2</a>
+      <a class="w3-button w3-hover-grey" href="#">»</a>
+    </div>
+  </div>
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
